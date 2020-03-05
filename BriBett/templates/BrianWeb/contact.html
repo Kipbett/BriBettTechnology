@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends "BrianWeb/base.html"%}
+{% load static %}
+
+{% block body_block%}
+    <section class="container-fluid" id="contact-head">
+        <div class="welcome welcome-contact text-left">
+          <h1 class="welcome-header">contact BriBett</h1>
+        </div>
+        <div class="message text-left">
+            <p>Get In Touch With BriBett</p>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="contacts">
+      <div>
+          <h3 class="text-center reason-header">Our Contacts & Location</h3>
+      </div>
+      <div class="line">
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="contacts text-center">
+            <p><span class="fa fa-envelope"></span> :<a href="mailto:bribett@gmail.com">bribett@gmail.com</a></p>
+            <p><span class="fa fa-phone"></span> : +254700403306 </p>
+            <p><span class=""></span></p>
+          </div>
+        </div>
+        <div class="map">
+          <map>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.01009300513!2d35.308383199999994!3d-0.3321921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ece3c5f923d46d7!2sSumeiyon%20Primary%20School!5e0!3m2!1sen!2ske!4v1582634322589!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid" id="subscribe">
+      <div class="form">
+        <form  method="POST">
+          <div class="form-group">
+              {{ form.as_table }}
+            {% csrf_token %}
+            <input type="submit" name="subscribe" value="Subscribe" class="btn btn-info">
+          </div>
+        </form>
+      </div>
+    </section>
+{% endblock %}

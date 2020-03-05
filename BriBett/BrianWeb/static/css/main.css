@@ -1,0 +1,109 @@
+body{
+  font-size: 1em;
+  font-family: serif;
+  font-style: oblique;
+}
+
+.social{
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*index*/
+
+#bribett{
+  float: right;
+}
+
+#index-head, #contact-head, #about-head, #portfolio-head{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+#index-head{
+  background-image: url('/static/images/code.jpg');
+}
+
+#about-head{
+  background-image: url('/static/images/codeScreen.jpg');
+}
+
+#portfolio-head{
+  background-image: url('/static/images/Software_Developer_4.jpg');
+}
+
+#contact-head{
+  background-image: url('/static/images/webDevelop.jpg');
+}
+
+.welcome{
+  font-size: 3em;
+  color: blue;
+  padding: 0px;
+  /*margin-top: 150px;*/
+}
+
+.welcome-header{
+  margin-top: 0px;
+  padding-top: 200px;
+}
+
+.message{
+  font-size: 1.5em;
+  color: blue;
+  font-style: italic;
+}
+
+#reason{
+  font-style: oblique;
+  font-family: serif;
+}
+
+.reasons{
+  border-right: 1px solid blue;
+}
+
+.reason-header{
+  font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: blue;
+  text-transform: capitalize;
+}
+
+.line{
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.reason-head{
+  font-size: 1.5em;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* CONTACT US */
+
+.contacts{
+  margin: 30%;
+  text: centered;
+}
+
+.footer{
+  color: white;
+  font-size: 1.5em;
+}
+
+/* ABOUT */
+
+#services-desktop, #services-web{
+  border-right: 1px solid blue;
+}
+
+.aim{
+  border-right: 1px solid blue;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends "BrianWeb/base.html"%}
+{% load static %}
+
+{% block body_block%}
+
+  <section class="container-fluid" id="portfolio-head">
+    <div class="welcome welcome-portfolio text-left">
+      <h1 class="welcome-header">work done at BriBett</h1>
+    </div>
+    <div class="message text-left">
+        <p>Get A Test Of the Best Applications</p>
+    </div>
+  </section>
+
+  <section class="container-fluid">
+    <div class="text-center">
+      <h3>Projects Done</h3>
+    </div>
+    <div class="line">
+      <hr>
+    </div>
+    <div>
+        <table class="table table-bordered table-strppied thead-dark">
+          <thead class="thead-dark">
+            <tr>
+              <td>Project Title</td>
+              <td>Project Image</td>
+              <td>Project Description</td>
+              <td>Project Auther</td>
+            </tr>
+          </thead>
+          <tbody>
+
+      {% for port in portfolio %}
+          {% for users in user %}
+                  <tr>
+                      <td>{{ port.project_title }}</td>
+                      <td><img src="{{ port.project_image.url}}" height="50px" width="80px"/></td>
+                      <td>{{ port.project_description }}</td>
+                      <td>{{ users.first_name }}</td>
+                    </tr>
+
+                {% endfor %}
+            {% endfor %}
+                  </tbody>
+                </table>
+    </div>
+  </section>
+{% endblock %}

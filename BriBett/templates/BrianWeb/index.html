@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% extends "BrianWeb/base.html"%}
+{% load static %}
+
+{% block body_block%}
+<div>
+    <section class="container-fluid" id="index-head">
+        <div class="welcome welcome-home text-left container-fluid">
+            <h1 class="welcome-header">BriBett Technologies</h1>
+        </div>
+        <div class="message text-left">
+            <p>Welcome to BriBett</p>
+        </div>
+    </section>
+
+    <section class="container-fluid" id="reason">
+        <div>
+            <h3 class="text-center reason-header">Why BriBett?</h3>
+        </div>
+        <div class="line">
+          <hr>
+        </div>
+        <div class="row">
+           <div class="container col-lg 6 col-md-6 col-sm-12 reasons">
+               <div class="reason-head">
+                   <h5 class="text-center">Build A Better Digital World for You</h5>
+               </div>
+               <div class="reason-body container">
+                   <span class="fa fa-globe"></span>
+                   <p class="text-center">
+                       BriBett seeks to be one of the best web, desktop and mobile application developers that will make
+                       your dreams come true
+                   </p>
+               </div>
+           </div>
+           <div class="container col-lg 6 col-md-6 col-sm-12">
+               <div class="container col-lg 6 col-md-6 col-sm-12">
+                   <div class="reason-head">
+                       <h5 class="text-center">Be Part of The Elite</h5>
+                   </div>
+                   <div class="reason-body container">
+                       <span class="fa fa-globe"></span>
+                       <p class="text-center">
+                           Get to be part of the clients with the most elite and customer user friendly applications
+                           that will take your business and ideas to the next level.
+                       </p>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
