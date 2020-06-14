@@ -20,31 +20,25 @@
     <div class="line">
       <hr>
     </div>
-    <div>
-        <table class="table table-bordered table-strppied thead-dark">
-          <thead class="thead-dark">
-            <tr>
-              <td>Project Title</td>
-              <td>Project Image</td>
-              <td>Project Description</td>
-              <td>Project Auther</td>
-            </tr>
-          </thead>
-          <tbody>
-
+    <div class="row">
       {% for port in portfolio %}
-          {% for users in user %}
-                  <tr>
-                      <td>{{ port.project_title }}</td>
-                      <td><img src="{{ port.project_image.url}}" height="50px" width="80px"/></td>
-                      <td>{{ port.project_description }}</td>
-                      <td>{{ users.first_name }}</td>
-                    </tr>
-
-                {% endfor %}
-            {% endfor %}
-                  </tbody>
-                </table>
+        {% for users in user %}
+          <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="title">
+              <h3 class="text-center">{{ port.portfolio_title }}</h3>
+            </div>
+            <div class="project_image">
+              <img src="{{ port.project_image.url }}" height="200px" width="100%">
+            </div>
+            <div class="project-auther">
+              <p>Project done by {{ users.user }}</p>
+            </div>
+            <div class="project-description">
+              <p>{{ port.project_description }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
     </div>
   </section>
 {% endblock %}
